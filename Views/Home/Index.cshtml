@@ -1,0 +1,47 @@
+﻿@model IEnumerable<TestWebService.Models.Results>
+
+@{
+    ViewBag.Title = "Тестовое задание получить данные с Web-сервиса";
+}
+
+<h2>Тестовое задание получить данные с Web-сервиса</h2>
+        @ViewBag.Message
+<tr>
+    <td>
+        <p>@ViewBag.astronomical_twilight_begin</p>
+
+        <p>@ViewBag.astronomical_twilight_end</p>
+
+        <p>@ViewBag.civil_twilight_begin</p>
+
+        <p>@ViewBag.civil_twilight_end</p>
+
+        <p>@ViewBag.day_length</p>
+
+        <p>@ViewBag.nautical_twilight_begin</p>
+
+        <p>@ViewBag.nautical_twilight_end</p>
+
+        <p>@ViewBag.solar_noon</p>
+
+        <p>@ViewBag.sunrise</p>
+
+        <p>@ViewBag.sunset</p>
+
+    </td>
+</tr>
+
+<html>
+<body>
+    <Form action="total" method="post">
+      Введите широту: <input type="number" id="arg1" name="arg1" title="Широта"/>
+      ВВедите долготу:<input type="number" id="arg1" name="arg2" title="Долгота"/>
+        <input type="submit" value="Получить данные" />
+    </Form>
+</body>
+</html>
+
+
+
+
+
